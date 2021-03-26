@@ -1,14 +1,27 @@
-import { useEffect } from 'react';
-import { Container } from './styles';
+import { useEffect, useState } from "react";
+import { Container } from "./styles";
 
 import { api } from "../../services/api";
 
-export function TransactionsTable(){
-  useEffect(()=>{ 
-    api.get('transactions').then( response => console.log(response.data))
-  },[])
+interface ITransaction {
+  id: number;
+  title: string;
+  type: string;
+  category: string;
+  amount: number;
+  createdAt: Date;
+}
 
-  return(
+export function TransactionsTable() {
+  const [transactions, setTransactions] = useState<ITransaction[]>([]);
+
+  useEffect(() => {
+    api
+      .get("transactions")
+      .then(response => setTransactions(response.data.transactions));
+  }, []);
+
+  return (
     <Container>
       <table>
         <thead>
@@ -20,7 +33,25 @@ export function TransactionsTable(){
           </tr>
         </thead>
         <tbody>
-          <tr>
+          {transactions.map(transaction => (
+            <tr key={transaction.id}>
+              <td>{transaction.title}</td>
+              <td className={transaction.type}>
+                {new Intl.NumberFormat("pt-br", {
+                  style: "currency",
+                  currency: "BRL"
+                }).format(transaction.amount)}
+              </td>
+              <td>{transaction.category}</td>
+              <td>
+                {new Intl.DateTimeFormat("pt-br").format(
+                  new Date(transaction.createdAt)
+                )}
+                {/* {transaction.createdAt} */}
+              </td>
+            </tr>
+          ))}
+          {/* <tr>
             <td>Desenvolvimento de website</td>
             <td className="deposit">R$12000</td>
             <td>Desenvolvimento</td>
@@ -37,9 +68,9 @@ export function TransactionsTable(){
             <td>R$120000</td>
             <td>Desenvolvimento</td>
             <td>20/02/2021</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
     </Container>
-  )
+  );
 }
