@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { Container } from "./styles";
 import incomeImg from "../../assets/income.svg";
 import outcomeImg from "../../assets/outcome.svg";
@@ -15,6 +14,14 @@ export function Summary() {
   //   return acc;
   // }, 0);
 
+  // const totalWithdraw = transactions.reduce((acc, transaction) => {
+  //   if (transaction.type === "withdraw") {
+  //     return acc + transaction.amount;
+  //   }
+  //   return acc;
+  // }, 0);
+
+  //Fazendo o somatorio do acumulado das transactions
   const summary = transactions.reduce(
     (acc, transaction) => {
       if (transaction.type === "deposit") {
@@ -34,13 +41,6 @@ export function Summary() {
       total: 0
     }
   );
-
-  const totalWithdraw = transactions.reduce((acc, transaction) => {
-    if (transaction.type === "withdraw") {
-      return acc + transaction.amount;
-    }
-    return acc;
-  }, 0);
 
   return (
     <Container>

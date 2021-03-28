@@ -6,11 +6,8 @@ import { Container, TransactionTypeContainer, RadioBox } from "./styles";
 import { useState, FormEvent } from "react";
 
 import { useTransactions } from "../../hooks/useTransactions";
+import { INewTransactionModalProps } from "./@interfaces";
 
-interface INewTransactionModalProps {
-  isOpen: boolean;
-  onRequestClose: () => void;
-}
 export function NewTransactionModal({
   isOpen,
   onRequestClose

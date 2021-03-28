@@ -5,7 +5,7 @@ import {
   ReactNode,
   useContext
 } from "react";
-import { api } from "../services/api";
+import { api } from "../../services/api";
 
 const TransactionsContext = createContext<ITransactionContextData>(
   {} as ITransactionContextData
@@ -20,12 +20,14 @@ interface ITransaction {
   createdAt: Date;
 }
 
-interface ITransactionInput {
-  title: string;
-  type: string;
-  category: string;
-  amount: number;
-}
+// Maneiras de
+
+// interface ITransactionInput {
+//   title: string;
+//   type: string;
+//   category: string;
+//   amount: number;
+// }
 
 // type TransactionInput = Omit<ITransaction, "id" | "createdAt">;
 

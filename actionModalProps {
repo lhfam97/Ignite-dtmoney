@@ -1,0 +1,66 @@
+[33mcommit 345ea155623d69450c02225ce9253d0191c78bf6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Luís Henrique Machado <lhfam97@gmail.com>
+Date:   Sat Mar 27 20:06:31 2021 -0300
+
+    Ajustes finais Projeto
+
+[33mcommit a800af6a2e3332fdc67a9647bc2d1a5ef2f0e376[m
+Author: Luís Henrique Machado <lhfam97@gmail.com>
+Date:   Fri Mar 26 18:40:03 2021 -0300
+
+    Adicao do contexto
+
+[33mcommit 9c1e9eab0d66c2311e83259bb62277f9a9b6e503[m
+Author: Luís Henrique Machado <lhfam97@gmail.com>
+Date:   Fri Mar 26 18:24:12 2021 -0300
+
+    Adicionando Transactions com a api
+
+[33mcommit 490c4da2753118dcb7a21be6e82d1d087d1498a2[m
+Author: Luis Henrique Fontes Alcantara Machado <luis.machado@cencosud.com.br>
+Date:   Thu Mar 25 16:49:39 2021 -0300
+
+    Adicao do modal na aplicacao
+
+[33mcommit 7ae2eefe7db4c3baaf63f5629e2f2615410ef6e6[m
+Author: Luis Henrique Fontes Alcantara Machado <luis.machado@cencosud.com.br>
+Date:   Thu Mar 25 15:58:48 2021 -0300
+
+    Adicionando axios e criando uma fake api com miragejs
+
+[33mcommit 92000641f491bb6d4e478d557da34524d9912a41[m
+Author: Luis Henrique Fontes Alcantara Machado <luis.machado@cencosud.com.br>
+Date:   Thu Mar 25 13:47:13 2021 -0300
+
+    Adicao do componente transaction table
+
+[33mcommit 1903eb476760039d26eca8b1ba44a9861886e82f[m
+Author: Luis Henrique Fontes Alcantara Machado <luis.machado@cencosud.com.br>
+Date:   Thu Mar 25 13:19:52 2021 -0300
+
+    Adicao do componente Summary
+
+[33mcommit 2ff81366385a5b2b3c444be1888eb96ac1db80c2[m
+Author: Luís Henrique Machado <lhfam97@gmail.com>
+Date:   Thu Mar 25 12:35:57 2021 -0300
+
+    Adicao do componente
+    Header
+
+[33mcommit 79cba4aa0002d0647cd1b48525dbbb7a096b35d8[m
+Author: Luís Henrique Machado <lhfam97@gmail.com>
+Date:   Thu Mar 25 11:14:04 2021 -0300
+
+     Adicao de global style e google fonts
+
+[33mcommit 9eaee2b6b2308756c6758dd0e6302c4e887e9510[m
+Author: Luís Henrique Machado <lhfam97@gmail.com>
+Date:   Tue Mar 23 16:53:39 2021 -0300
+
+    First commit com assets do figma
+
+[33mcommit ca0c2312946ac72f9cc443f7ec5af62eaa30f85a[m
+Author: Luís Henrique Machado <lhfam97@gmail.com>
+Date:   Tue Mar 23 15:23:52 2021 -0300
+
+    Initialize project using Create React App
